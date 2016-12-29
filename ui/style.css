@@ -19,4 +19,14 @@ body {
 .img-medium {
     height: 200px;
 }
-
+.stl{
+        
+    max-width: 900px;
+	margin: 0 auto;
+	color: gray;
+	font-style: italic;
+	font-family: sans-serif;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+}
