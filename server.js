@@ -5,24 +5,26 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-'article-two': {
-        title: 'Article Two | Tanmai Gopal',
+var articles = {
+    'article-one': {
+        title: 'Article One | VR',
         heading: 'Article Two',
         date: 'Sep 10, 2016',
         content: `
            <p>
-               This is the content for my second article.
+               This is the content for first article.This is the content for first article.This is the content for first article.
+               This is the content for first article.This is the content for first article.
            </p>`
     },
-    'article-three': {
-        title: 'Article Three | Tanmai Gopal',
+    'article-two': {
+        title: 'Article Two | VR',
         heading: 'Article Three',
         date: 'Sep 15, 2016',
         content: `
            <p>
               This is the content for my third article.
           </p>`
-    }
+    },
 };
 
 function createTemplate(data){
