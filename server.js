@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 //Nested Obj's Down here
-var articles : {
+var articles = {
   //obj and names
  'article-one' : {
   title : 'Article-One / VR',
