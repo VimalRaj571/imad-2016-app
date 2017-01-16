@@ -46,7 +46,7 @@ var articles ={
     done by the stuff called the xtra art obj in nested obj stuffs
     go for the right one doing the correct the stuffs <p/>`
   },
-}
+};
 function createTemplate(data) {
   var title = data.title;
   var heading = data.heading;
