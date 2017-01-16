@@ -36,6 +36,6 @@ button.onclick = function count() {
     //Not done Do Somthing else
   };
   //(old code) counter = counter + 1;
-  request.open('GET','http://127.0.0.1:8080/counter',true);
+  request.open('GET','http://vimalraj571.imad.hasura-app.io/counter',true);
   request.send(null);
 };
