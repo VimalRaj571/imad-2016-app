@@ -86,9 +86,9 @@ app.get('/', function (req, res) {
 });
 
 //var counter=0 ;
-//app.get('/counter', function (req, res) {
-//  counter = counter + 1;
- // res.send(counter.toString());
+app.get('/counter', function (req, res) {
+  counter = counter + 1;
+  res.send(counter.toString());
 });
 //**Express frame work for matching name :articleName
 //Article name == article-one
