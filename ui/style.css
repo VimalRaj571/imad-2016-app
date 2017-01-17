@@ -6,6 +6,9 @@ body {
 
 .center {
     margin: auto;
+    line-height: 200px;
+    height: 200px;
+    text-align: center;
 }
 
 .text-big {
