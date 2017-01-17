@@ -94,7 +94,7 @@ app.get('/counter', function (req, res) {
 //submit-names
 var names= [];
 app.get('/submit-names/:names',function(req,res){
-    var names = req.params.name;
+    var name = req.params.name;
     
     names.push(name);
    //JSON=JS object Notation 
