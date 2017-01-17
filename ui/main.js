@@ -60,12 +60,12 @@ submit.onclick = function(){
             }
         var ul =document.getElementById('name_list');
         ul.innerHTML = list;          
-        }
     }
+        }
     //Not done Do Somthing else
   };
   var nameInput = document.getElementById('input');
-  var names = nameInput.values;
+  var names = nameInput.value;
   request.open('GET','http://vimalraj571.imad.hasura-app.io/submit-name?name='+ names, true);
   request.send(null);
 };
