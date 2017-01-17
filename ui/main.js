@@ -44,7 +44,7 @@ button.onclick = function count() {
 
 var nameInput = document.getElementById('input');
 var names = nameInput.values;
-var button= document.getElementById('sub_btn');
+var submit= document.getElementById('sub_btn');
 submit.onclick = function(){
     //Make a request to the server send response as names
     //Capture the names and Render them in list
