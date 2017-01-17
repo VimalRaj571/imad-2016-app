@@ -39,3 +39,24 @@ button.onclick = function count() {
   request.open('GET','http://vimalraj571.imad.hasura-app.io/counter',true);
   request.send(null);
 };
+
+//Print names
+
+var nameInput = document.getElementById('input');
+var names = nameInput.values;
+var button=documentgetElementById('sub_btn');
+submit.onclick = function(){
+    //Make a request to the server send response as names
+    //Capture the names and Render them in list
+    var names=['name1','name2','name3','name4'];
+    var list ='';
+    for (var i=0;i<names.length;i++){
+        list += '<li>'+names[i]+'</li>';
+    }
+    var ul =document.getElementById('name_list');
+    ul.innerHTML = list;
+};
+
+
+
+
