@@ -98,7 +98,7 @@ app.get('/submit-names/:names',function(req,res){
     
     names.push(names);
    //JSON=JS object Notation 
-    res.send(JSON.stringify(name));
+    res.send(JSON.stringify(names));
 });
 
 //**Express frame work for matching name :articleName
