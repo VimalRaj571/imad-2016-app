@@ -43,7 +43,7 @@ button.onclick = function count() {
 //Print names
 
 var nameInput = document.getElementById('input');
-var name = nameInput.values;
+var names = nameInput.values;
 var submit= document.getElementById('sub_btn');
 submit.onclick = function(){
     //Make a request to the server send response as names
