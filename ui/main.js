@@ -42,8 +42,6 @@ button.onclick = function count() {
 
 //Print names
 
-var nameInput = document.getElementById('input');
-var names = nameInput.values;
 var submit= document.getElementById('sub_btn');
 submit.onclick = function(){
     //Make a request to the server send response as names
@@ -66,6 +64,8 @@ submit.onclick = function(){
     }
     //Not done Do Somthing else
   };
+  var nameInput = document.getElementById('input');
+  var names = nameInput.values;
   request.open('GET','http://vimalraj571.imad.hasura-app.io/submit-name?name='+ name, true);
   request.send(null);
 };
