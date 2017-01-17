@@ -90,6 +90,16 @@ app.get('/counter', function (req, res) {
   counter = counter + 1;
   res.send(counter.toString());
 });
+
+//submit-names
+app.get('/submit-names:names',function(req,res){
+    var names = req.params.name;
+    
+    name.push(names);
+   //JSON=JS object Notation 
+    res.send(JSON.stringify(names));
+});
+
 //**Express frame work for matching name :articleName
 //Article name == article-one
 //Articles[articleName] == {} content obj for article-one
