@@ -93,10 +93,10 @@ app.get('/counter', function (req, res) {
 
 //submit-names
 var names= [];
-app.get('/submit-names/:names',function(req,res){
+app.get('/submit-names/:name',function(req,res){
     var name = req.params.name;
     
-    names.push(names);
+    names.push(name);
    //JSON=JS object Notation 
     res.send(JSON.stringify(names));
 });
