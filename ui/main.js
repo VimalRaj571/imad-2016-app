@@ -47,14 +47,27 @@ var names = nameInput.values;
 var submit= document.getElementById('sub_btn');
 submit.onclick = function(){
     //Make a request to the server send response as names
-    //Capture the names and Render them in list
-    var names=['name1','name2','name3','name4'];
-    var list ='';
-    for (var i=0;i<names.length;i++){
-        list += '<li>'+names[i]+'</li>'; //a=a+b;
+      var request = new XMLHttpRequest();
+  //capture the response and save in a variable
+  request.onreadystatechange = function functionName() {
+    if(request.readyState ===  XMLHttpRequest.DONE){
+      //Take some action
+        if(request.status === 200){
+            //Capture the names and Render them in list
+            var names= request.responseText;
+            names = JSON.parse(names);
+            var list ='';
+            for (var i=0;i<names.length;i++){
+                list += '<li>'+names[i]+'</li>'; //a=a+b;
+            }
+        var ul =document.getElementById('name_list');
+        ul.innerHTML = list;          
+        }
     }
-    var ul =document.getElementById('name_list');
-    ul.innerHTML = list;
+    //Not done Do Somthing else
+  };
+  request.open('GET','http://vimalraj571.imad.hasura-app.io/submit-name?name='+names, true);
+  request.send(null);
 };
 
 
