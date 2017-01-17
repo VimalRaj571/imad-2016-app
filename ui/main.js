@@ -66,7 +66,7 @@ submit.onclick = function(){
   };
   var nameInput = document.getElementById('input');
   var names = nameInput.values;
-  request.open('GET','http://vimalraj571.imad.hasura-app.io/submit-name?name='+ name, true);
+  request.open('GET','http://vimalraj571.imad.hasura-app.io/submit-name?name='+ names, true);
   request.send(null);
 };
 
